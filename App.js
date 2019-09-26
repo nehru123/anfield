@@ -3,21 +3,31 @@ import { Text, View, Image, ScrollView } from 'react-native';
 import {createAppContainer} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
 
-import HomeScreen from './src/assets/component/screen/HomeScreen/HomeScreen';
-import Profile from './src/assets/component/screen/Profile/Profile';
+import LoginPage from './src/assets/component/screen/LoginPage/LoginPage';
+import RegisterPage from './src/assets/component/screen/RegisterPage/RegisterPage';
 import MainPage from './src/assets/component/screen/MainPage/MainPage';
 import CategoriesPage from './src/assets/component/screen/CategoriesPage/CategoriesPage';
+import DetailPage from './src/assets/component/screen/DetailPage/DetailPage';
+import CartPage from './src/assets/component/screen/CartPage/Cartpage';
+
+
 
 const MainNavigator = createStackNavigator({
   
-
-  Home: {
-    screen: HomeScreen , 
+  
+  MyCartPage: {screen: CartPage,
     navigationOptions: {
       header: null,
+ 
     },
   },
-  MyProfile: {screen: Profile,
+  MyDetailPage: {screen: DetailPage,
+    navigationOptions: {
+      header: null,
+ 
+    },
+  },
+  MyLoginPage: {screen:LoginPage,
     navigationOptions: {
       header: null,
     },},
@@ -29,6 +39,10 @@ const MainNavigator = createStackNavigator({
         
         
        },
+       MyDetailPage: {screen: DetailPage,
+        navigationOptions: {
+          header: null,
+        },},
      
  
  
