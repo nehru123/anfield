@@ -27,12 +27,17 @@ const DetailPage = () => {
             </View>
             <View style={{flexDirection:"row",justifyContent:"space-between",marginHorizontal:27}}>
             <View style={{}}>
-           <Text style={{color:"grey",fontSize:12,fontWeight:"bold"}}>PRICE
+            <Text style={{color:"grey",fontSize:15,marginVertical:5}}>Toko Koi
+           
            </Text>
+           <Text style={{color:"grey",fontSize:12,fontWeight:"bold"}}>PRICE
+           
+           </Text>
+           
            <Text style={{color:"red",fontSize:16,fontWeight:"bold"}}>Rp.150k</Text>
             </View>
          
-            <View style={{ height:600,width:120,borderRadius:20,marginVertical:10}}>
+            <View style={{ height:600,width:120,borderRadius:20,marginVertical:20}}>
               <Button
           title="Buy Now"
           color="red"

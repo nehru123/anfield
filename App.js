@@ -15,7 +15,7 @@ import CartPage from './src/assets/component/screen/CartPage/Cartpage';
 const MainNavigator = createStackNavigator({
   
   
-  MyCartPage: {screen: CartPage,
+  MyRegisterPage: {screen: RegisterPage,
     navigationOptions: {
       header: null,
  

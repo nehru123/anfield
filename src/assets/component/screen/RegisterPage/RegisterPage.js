@@ -7,8 +7,9 @@ const RegisterPage = (props) => {
     const {navigate} = props.navigation;
     return (
         <View style={{ flex: 1 }}>
-
+<ScrollView>
             <View style={{ flex: 1, backgroundColor: "white" }}>
+                
                 <View style={styles.borderContainer}>
                     <View style={{ marginHorizontal:30,marginVertical:30 }}>
                         <Text style={{ fontSize: 25 }}>Sign Up              </Text>
@@ -28,6 +29,14 @@ const RegisterPage = (props) => {
                         <Text>Phone number</Text>
                         <TextInput placeholder="08512344567" style={ styles.TextInputStyles} />
                     </View>
+                    <View style={{ marginHorizontal: 30,marginVertical:15}}>
+                        <Text>Tanggal lahir ( dd/mm/yy )</Text>
+                        <TextInput placeholder="12/08/1998" style={ styles.TextInputStyles} />
+                    </View>
+                    <View style={{ marginHorizontal: 30,marginVertical:15}}>
+                        <Text>Alamat</Text>
+                        <TextInput placeholder="Jalan Raya Bagong" style={ styles.TextInputStyles} />
+                    </View>
                    
               <View style={{ marginHorizontal: 35,borderRadius:20,marginVertical:10}}>
               <Button
@@ -37,9 +46,9 @@ const RegisterPage = (props) => {
         />
               </View>
                 </View>
-
+               
             </View>
-
+            </ScrollView>
         </View>
     )
 }
@@ -48,9 +57,10 @@ const styles = StyleSheet.create({
         borderWidth:2,
         borderRadius:20,
         borderColor: "red",
-        height: 500, 
-        marginHorizontal: 40,
-        marginTop:30
+        height: 669, 
+        marginHorizontal: 50,
+        marginTop:30,
+        marginVertical:30
     },
 TextInputStyles : {
     borderBottomWidth: 2, 
