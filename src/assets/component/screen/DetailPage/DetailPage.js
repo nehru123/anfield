@@ -3,8 +3,8 @@ import { Text, View, Image, ScrollView, TextInput, Button,StyleSheet} from 'reac
 
 
 
-const DetailPage = () => {
-  
+const DetailPage = (props) => {
+    const {navigate} = props.navigation;
     return (
         <View style={{ flex: 1 }}>
 
@@ -17,8 +17,8 @@ const DetailPage = () => {
 
             </View>
             <View style={{flexDirection:"row",justifyContent:"space-evenly"}}>
-                <View><Text>filter 1</Text></View>
-                <View><Text>filter 2</Text></View>
+                <View><Text>Size    : M</Text></View>
+                <View><Text>Color   :-</Text></View>
             </View>
             <View style={{marginHorizontal:26,marginVertical:20}}>
                 <Text style={{fontSize:17,fontWeight:"bold"}}>Details</Text>
@@ -38,7 +38,7 @@ const DetailPage = () => {
             </View>
          
             <View style={{ height:600,width:120,borderRadius:20,marginVertical:20}}>
-              <Button
+            <Button
           title="Buy Now"
           color="red"
           onPress={() => navigate('MyCartPage')}

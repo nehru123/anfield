@@ -9,11 +9,14 @@ import MainPage from './src/assets/component/screen/MainPage/MainPage';
 import CategoriesPage from './src/assets/component/screen/CategoriesPage/CategoriesPage';
 import DetailPage from './src/assets/component/screen/DetailPage/DetailPage';
 import CartPage from './src/assets/component/screen/CartPage/Cartpage';
+import AddProduct from './src/assets/component/screen/AddProduct/AddProduct';
 
 
 
 const MainNavigator = createStackNavigator({
   
+  
+ 
   
   MyRegisterPage: {screen: RegisterPage,
     navigationOptions: {
@@ -22,6 +25,12 @@ const MainNavigator = createStackNavigator({
     },
   },
   MyDetailPage: {screen: DetailPage,
+    navigationOptions: {
+      header: null,
+ 
+    },
+  },
+  MyCartPage: {screen: CartPage,
     navigationOptions: {
       header: null,
  
@@ -36,9 +45,9 @@ const MainNavigator = createStackNavigator({
         header: null,
       },},
       MyCategoriesPage: {screen: CategoriesPage,
-        
-        
-       },
+        navigationOptions: {
+          header: null,
+        },},
        MyDetailPage: {screen: DetailPage,
         navigationOptions: {
           header: null,

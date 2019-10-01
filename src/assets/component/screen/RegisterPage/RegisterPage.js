@@ -55,10 +55,10 @@ const RegisterPage = (props) => {
 const styles = StyleSheet.create({
     borderContainer: {
         borderWidth:2,
-        borderRadius:20,
+        borderRadius:16,
         borderColor: "red",
         height: 669, 
-        marginHorizontal: 50,
+        marginHorizontal:30,
         marginTop:30,
         marginVertical:30
     },

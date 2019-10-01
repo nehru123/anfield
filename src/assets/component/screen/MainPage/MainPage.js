@@ -10,29 +10,31 @@ const MainPage = (props) => {
 
             <View style={{ flex: 1, backgroundColor: "white" }}>
 
-                <TextInput placeholder="           Search your product" style={{marginVertical:25,borderRadius:30,backgroundColor:"#F7F7F7",marginHorizontal:16}}/> 
+                <TextInput placeholder="Search your product" style={{marginVertical:25,borderRadius:30,backgroundColor:"#F7F7F7",marginHorizontal:16,paddingLeft:30}}/> 
                <View style={{height:30,marginHorizontal:20}}>
                    <Text style={{fontWeight:"bold",fontSize:17}}>Categories</Text>
                </View>
                <View style={{flexDirection:"row",justifyContent:"space-around",marginVertical:15}}>
               
+              
+               
+                  <View>
+                   <Image source={require('../MainPage/user.png')} style={{width:30,height:30,resizeMode:"contain"}}></Image>
+                   <Text style={{paddingVertical:15,justifyContent:"space-around"}}>Hi Nehru </Text>
+               </View>
+              
                <View >
-                   <TouchableHighlight>
+               <TouchableHighlight>
                <TouchableOpacity onPress={()=>navigate('MyCategoriesPage')}>
-                   <Image source={require('../MainPage/s.png')} style={{width:30,height:30,resizeMode:"contain"}} ></Image>
-                   <Text style={{paddingVertical:15}}>Bag 3</Text>
+                   <Image source={require('../MainPage/shop.png')} style={{width:30,height:30,resizeMode:"contain"}} ></Image>
+                   <Text style={{paddingVertical:15}}>Tas Kulit</Text>
                   </TouchableOpacity>
                   </TouchableHighlight>
-               </View>
-
-             
+                  </View>
+              
                <View>
-                   <Image source={require('../MainPage/s.png')} style={{width:30,height:30,resizeMode:"contain"}}></Image>
-                   <Text style={{paddingVertical:15}}>Bag 3</Text>
-               </View>
-               <View>
-                   <Image source={require('../MainPage/s.png')} style={{width:30,height:30,resizeMode:"contain"}}></Image>
-                   <Text style={{paddingVertical:15}}>Bag 3</Text>
+                   <Image source={require('../MainPage/gift-box.png')} style={{width:30,height:30,resizeMode:"contain"}}></Image>
+                   <Text style={{paddingVertical:15}}>Suvenir</Text>
                </View>
                 
                </View>
@@ -68,8 +70,8 @@ const MainPage = (props) => {
             </View>
             <View style={{height:50,backgroundColor:"white",flexDirection:"row",justifyContent:"space-around"}}>
             <Text style={{alignSelf:"center"}}>explorer</Text>
-            <Image source={require('../MainPage/s.png')} style={{alignSelf:"center",width:30,height:30,resizeMode:"contain"}}></Image>
-            <Image source={require('../MainPage/s.png')} style={{alignSelf:"center",width:30,height:30,resizeMode:"contain"}}></Image>
+            <Image source={require('../MainPage/shopping-cart.png')} style={{alignSelf:"center",width:30,height:30,resizeMode:"contain",marginBottom:10}}></Image>
+            <Image source={require('../MainPage/profile.png')} style={{alignSelf:"center",width:30,height:30,resizeMode:"contain",marginBottom:10}}></Image>
             </View>
 
         </View>
