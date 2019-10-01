@@ -7,10 +7,11 @@ const CategoriesPage = (props) => {
     const {navigate} = props.navigation;
     return (
         <View style={{ flex: 1 }}>
-
-            <View style={{ flex: 1, backgroundColor: "white" }}>
-            
-               <View style={{flexDirection:"row",marginHorizontal:12,marginVertical:32,flexWrap:"wrap"}}>
+<ScrollView>
+    <Image style={{height:300,width:380, resizeMode:"contain",backgroundColor:"grey"}} source={require('../CategoriesPage/eva.png')}></Image>
+            <View style={{ flex: 1, backgroundColor: "white",translateY:-110,borderTopRightRadius: 50,borderTopLeftRadius:50}}>
+ 
+               <View style={{flexDirection:"row",justifyContent:"center",marginVertical:32,flexWrap:"wrap"}}>
                <View style={{paddingHorizontal:8}}>
                <TouchableOpacity onPress={()=>navigate('MyDetailPage')}>
                    <Image source={require('../MainPage/p1.jpg')} style={{borderRadius:15,height:145,width:140}}></Image>     
@@ -50,7 +51,9 @@ const CategoriesPage = (props) => {
                    <Text style={{marginHorizontal:20,fontSize:13,color:"red",fontWeight:"bold"}}>Rp.150.00,00</Text>
                </View>
             </View>
+            
               </View>
+              </ScrollView>
 </View>
        
     )

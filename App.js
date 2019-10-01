@@ -36,6 +36,7 @@ const MainNavigator = createStackNavigator({
  
     },
   },
+ 
   MyLoginPage: {screen:LoginPage,
     navigationOptions: {
       header: null,
@@ -46,7 +47,8 @@ const MainNavigator = createStackNavigator({
       },},
       MyCategoriesPage: {screen: CategoriesPage,
         navigationOptions: {
-          header: null,
+          title:"Tas Kulit",
+         
         },},
        MyDetailPage: {screen: DetailPage,
         navigationOptions: {

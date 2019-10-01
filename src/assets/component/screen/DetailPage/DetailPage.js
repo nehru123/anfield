@@ -16,9 +16,9 @@ const DetailPage = (props) => {
             <Text style={styles.text}>Tas Kulit Original Wanita</Text>
 
             </View>
-            <View style={{flexDirection:"row",justifyContent:"space-evenly"}}>
-                <View><Text>Size    : M</Text></View>
-                <View><Text>Color   :-</Text></View>
+            <View style={{flexDirection:"row",justifyContent:"space-around"}}>
+                <View style={{borderRadius:20,borderWidth:1,borderColor:"red",padding:8,paddingHorizontal:20}}><Text style={{fontSize:13,fontWeight:"bold"}}>Size    : M</Text></View>
+                <View style={{borderRadius:20,borderWidth:1,borderColor:"red",padding:8,paddingHorizontal:20}}><Text style={{fontSize:13,fontWeight:"bold"}}>weight  : 20 g</Text></View>
             </View>
             <View style={{marginHorizontal:26,marginVertical:20}}>
                 <Text style={{fontSize:17,fontWeight:"bold"}}>Details</Text>
@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
     },
     text :{
         marginHorizontal:30,
-        fontSize:26,
+        fontSize:20,
         fontWeight:"bold",
         marginVertical:10,
         alignSelf:"center"

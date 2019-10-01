@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Text, View, Image, ScrollView, TextInput, Button,StyleSheet} from 'react-native';
 
 
-
 const CartPage = (props) => {
     const {navigate} = props.navigation;
     return (
@@ -61,14 +60,14 @@ const CartPage = (props) => {
 
 </View>
 </ScrollView>
-<View style={{height:30}}>
+<View style={{height:50}}>
          
-       
-<Button
-          title="Checkout"
-          color="red"
-          onPress={() => navigate('null')}
-        />
+       <View style={{}}>
+
+       <Button
+  title="Solid Button"
+/>
+        </View>
           </View>
 </View>
 

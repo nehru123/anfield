@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Text, View, Image, ScrollView, TextInput, Button ,StyleSheet} from 'react-native';
 
 
-
 const RegisterPage = (props) => {
     const {navigate} = props.navigation;
     return (

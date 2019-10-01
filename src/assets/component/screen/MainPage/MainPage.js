@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { Text, View, Image, ScrollView, TextInput, Button,TouchableOpacity , TouchableHighlight } from 'react-native';
 
-
-
 const MainPage = (props) => {
     const {navigate} = props.navigation;
     return (
@@ -15,14 +13,6 @@ const MainPage = (props) => {
                    <Text style={{fontWeight:"bold",fontSize:17}}>Categories</Text>
                </View>
                <View style={{flexDirection:"row",justifyContent:"space-around",marginVertical:15}}>
-              
-              
-               
-                  <View>
-                   <Image source={require('../MainPage/user.png')} style={{width:30,height:30,resizeMode:"contain"}}></Image>
-                   <Text style={{paddingVertical:15,justifyContent:"space-around"}}>Hi Nehru </Text>
-               </View>
-              
                <View >
                <TouchableHighlight>
                <TouchableOpacity onPress={()=>navigate('MyCategoriesPage')}>
@@ -65,15 +55,17 @@ const MainPage = (props) => {
                    <Text style={{marginHorizontal:20,fontSize:12,color:"grey"}}>Toko Tas Koi</Text>
                    <Text style={{marginHorizontal:20,fontSize:13,color:"red",fontWeight:"bold"}}>Rp.150.00,00</Text>
                </View>
+           
             </View>
             </ScrollView>
             </View>
+           
             <View style={{height:50,backgroundColor:"white",flexDirection:"row",justifyContent:"space-around"}}>
             <Text style={{alignSelf:"center"}}>explorer</Text>
             <Image source={require('../MainPage/shopping-cart.png')} style={{alignSelf:"center",width:30,height:30,resizeMode:"contain",marginBottom:10}}></Image>
             <Image source={require('../MainPage/profile.png')} style={{alignSelf:"center",width:30,height:30,resizeMode:"contain",marginBottom:10}}></Image>
             </View>
-
+      
         </View>
     )
 }
