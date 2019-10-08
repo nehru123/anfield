@@ -21,22 +21,24 @@ const MainPage = (props) => {
                   </TouchableOpacity>
                   </TouchableHighlight>
                   </View>
-              
+            
                <View>
                    <Image source={require('../MainPage/gift-box.png')} style={{width:30,height:30,resizeMode:"contain"}}></Image>
                    <Text style={{paddingVertical:15}}>Suvenir</Text>
                </View>
+
                 
                </View>
+              
+              
                <View style={{height:48,marginHorizontal:20,flexDirection:"row",justifyContent:"space-between"}}>
                    <Text style={{fontWeight:"bold",fontSize:17}}>Best Selling</Text>
                    <TouchableOpacity onPress={()=>navigate('MyCategoriesPage')}>
                    <Text  style={{fontSize:14}}>See all</Text>
                    </TouchableOpacity>
                </View>
-               <ScrollView horizontal  showsHorizontalScrollIndicator={false}>
-              
-               <View style={{flexDirection:"row",marginHorizontal:12}}>
+          
+               <View style={{marginHorizontal:12,flexDirection:"row"}}>
                <View style={{paddingHorizontal:8}}>
                    <Image source={require('../MainPage/p1.jpg')} style={{borderRadius:15,height:145,width:140,marginVertical:10}}></Image>
                    <Text style={{marginHorizontal:20}}>Tas Kulit Ori</Text>
@@ -49,19 +51,14 @@ const MainPage = (props) => {
                    <Text style={{marginHorizontal:20,fontSize:12,color:"grey"}}>Toko Tas Koi</Text>
                    <Text style={{marginHorizontal:20,fontSize:13,color:"red",fontWeight:"bold"}}>Rp.150.00,00</Text>
                </View>
-               <View style={{paddingHorizontal:8}}>
-                   <Image source={require('../MainPage/p1.jpg')} style={{borderRadius:15,height:145,width:140,marginVertical:10}}></Image>
-                   <Text style={{marginHorizontal:20}}>Tas Kulit Ori</Text>
-                   <Text style={{marginHorizontal:20,fontSize:12,color:"grey"}}>Toko Tas Koi</Text>
-                   <Text style={{marginHorizontal:20,fontSize:13,color:"red",fontWeight:"bold"}}>Rp.150.00,00</Text>
                </View>
-           
-            </View>
-            </ScrollView>
+          
+        
             </View>
            
+         
             <View style={{height:50,backgroundColor:"white",flexDirection:"row",justifyContent:"space-around"}}>
-            <Text style={{alignSelf:"center"}}>explorer</Text>
+            <Image source={require('../MainPage/home.png')} style={{alignSelf:"center",width:30,height:30,resizeMode:"contain",marginBottom:10}}></Image>
             <Image source={require('../MainPage/shopping-cart.png')} style={{alignSelf:"center",width:30,height:30,resizeMode:"contain",marginBottom:10}}></Image>
             <Image source={require('../MainPage/profile.png')} style={{alignSelf:"center",width:30,height:30,resizeMode:"contain",marginBottom:10}}></Image>
             </View>

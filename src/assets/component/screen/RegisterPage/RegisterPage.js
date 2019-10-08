@@ -19,23 +19,19 @@ const RegisterPage = (props) => {
                     <View style={{ marginHorizontal: 30}}>
                         <Text>Email</Text>
                         <TextInput placeholder="haha@example.com" style={ styles.TextInputStyles} />
+
+                    </View>
+                    <View style={{ marginHorizontal: 30,marginVertical:15}}>
+                        <Text>Nama lengkap</Text>
+                        <TextInput placeholder="08512344567" style={ styles.TextInputStyles} />
                     </View>
                     <View style={{ marginHorizontal: 30,marginVertical:15}}>
                         <Text>Password</Text>
                         <TextInput placeholder="********" style={ styles.TextInputStyles } />
                     </View>
-                    <View style={{ marginHorizontal: 30,marginVertical:15}}>
-                        <Text>Phone number</Text>
-                        <TextInput placeholder="08512344567" style={ styles.TextInputStyles} />
-                    </View>
-                    <View style={{ marginHorizontal: 30,marginVertical:15}}>
-                        <Text>Tanggal lahir ( dd/mm/yy )</Text>
-                        <TextInput placeholder="12/08/1998" style={ styles.TextInputStyles} />
-                    </View>
-                    <View style={{ marginHorizontal: 30,marginVertical:15}}>
-                        <Text>Alamat</Text>
-                        <TextInput placeholder="Jalan Raya Bagong" style={ styles.TextInputStyles} />
-                    </View>
+                   
+                    
+                 
                    
               <View style={{ marginHorizontal: 35,borderRadius:20,marginVertical:10}}>
               <Button
@@ -56,7 +52,7 @@ const styles = StyleSheet.create({
         borderWidth:2,
         borderRadius:16,
         borderColor: "red",
-        height: 669, 
+        height: 499, 
         marginHorizontal:30,
         marginTop:30,
         marginVertical:30
