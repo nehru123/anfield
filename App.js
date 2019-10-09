@@ -10,14 +10,18 @@ import CategoriesPage from './src/assets/component/screen/CategoriesPage/Categor
 import DetailPage from './src/assets/component/screen/DetailPage/DetailPage';
 import CartPage from './src/assets/component/screen/CartPage/Cartpage';
 import AddProduct from './src/assets/component/screen/AddProduct/AddProduct';
+import ProfilePage from './src/assets/component/screen/ProfilePage/ProfilePage';
 
 
 
 const MainNavigator = createStackNavigator({
   
   
- 
-  
+  MyProfilepage: {screen: ProfilePage,
+    navigationOptions: {
+      header: null,
+    },
+  },
   MyRegisterPage: {screen: RegisterPage,
     navigationOptions: {
       header: null,

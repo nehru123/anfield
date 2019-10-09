@@ -8,7 +8,7 @@ const CategoriesPage = (props) => {
     return (
         <View style={{ flex: 1 }}>
 <ScrollView>
-    <Image style={{height:300,width:380, resizeMode:"contain",backgroundColor:"grey"}} source={require('../CategoriesPage/eva.png')}></Image>
+   
             <View style={{ flex: 1, backgroundColor: "white",translateY:-110,borderTopRightRadius: 50,borderTopLeftRadius:50}}>
  
                <View style={{flexDirection:"row",justifyContent:"center",marginVertical:32,flexWrap:"wrap"}}>

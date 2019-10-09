@@ -37,8 +37,20 @@ const MainPage = (props) => {
                    <Text  style={{fontSize:14}}>See all</Text>
                    </TouchableOpacity>
                </View>
-          
-               <View style={{marginHorizontal:12,flexDirection:"row"}}>
+          <ScrollView>
+               <View style={{marginHorizontal:12,flexDirection:"row",flexWrap:"wrap"}}>
+               <View style={{paddingHorizontal:8}}>
+                   <Image source={require('../MainPage/p1.jpg')} style={{borderRadius:15,height:145,width:140,marginVertical:10}}></Image>
+                   <Text style={{marginHorizontal:20}}>Tas Kulit Ori</Text>
+                   <Text style={{marginHorizontal:20,fontSize:12,color:"grey"}}>Toko Tas Koi</Text>
+                   <Text style={{marginHorizontal:20,fontSize:13,color:"red",fontWeight:"bold"}}>Rp.150.00,00</Text>
+               </View>
+               <View style={{paddingHorizontal:8}}>
+                   <Image source={require('../MainPage/p1.jpg')} style={{borderRadius:15,height:145,width:140,marginVertical:10}}></Image>
+                   <Text style={{marginHorizontal:20}}>Tas Kulit Ori</Text>
+                   <Text style={{marginHorizontal:20,fontSize:12,color:"grey"}}>Toko Tas Koi</Text>
+                   <Text style={{marginHorizontal:20,fontSize:13,color:"red",fontWeight:"bold"}}>Rp.150.00,00</Text>
+               </View>
                <View style={{paddingHorizontal:8}}>
                    <Image source={require('../MainPage/p1.jpg')} style={{borderRadius:15,height:145,width:140,marginVertical:10}}></Image>
                    <Text style={{marginHorizontal:20}}>Tas Kulit Ori</Text>
@@ -52,6 +64,9 @@ const MainPage = (props) => {
                    <Text style={{marginHorizontal:20,fontSize:13,color:"red",fontWeight:"bold"}}>Rp.150.00,00</Text>
                </View>
                </View>
+            
+               </ScrollView>
+               
           
         
             </View>
